@@ -17,9 +17,11 @@
         everything is already in a process.
         </p>
     </div>
-    <div class="contact">
-        <input type="text" class="email" placeholder="email">
-        <button class="button">keep me in touch</button>
-    </div>
+    <form id="emailForm" class="contact">
+        <input type="email" name="email" class="email" placeholder="email" required>
+        <button class="button" type="submit">keep me in touch</button>
+        <p id="msg" class="msg"></p>
+    </form>
+    <script src="sendEmail.js"></script>
 </body>
 </html>
